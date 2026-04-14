@@ -15,6 +15,7 @@ print("Python Calculator")
 while True : 
     print("Please choose an operation to do : + , - , * , / or type 'exit' to exit the calculator")
     choice = input("Select an operation : ")
+    
     if choice == 'exit' :
         print("closing the calculator..")
         break
@@ -23,13 +24,8 @@ while True :
     num2 = float(input("Please enter the second number : "))
     
     match choice : 
-        case '+' :
-            add(num1,num2)
-        case '-' :
-            sub(num1,num2)
-        case '*' : 
-            multiply(num1,num2)
-        case '/' :
-            divide(num1,num2)
-        case _ :
-            print("Invalid operation selected!")
+        case '+' : add(num1,num2)
+        case '-' : sub(num1,num2)
+        case '*' : multiply(num1,num2)
+        case '/' : divide(num1,num2)
+        case _ : print("Invalid operation selected!")
