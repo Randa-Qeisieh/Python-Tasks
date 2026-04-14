@@ -33,4 +33,3 @@ while True :
             divide(num1,num2)
         case _ :
             print("Invalid operation selected!")
-
