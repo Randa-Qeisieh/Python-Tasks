@@ -21,7 +21,7 @@ class Book :
         
     def __str__(self) : 
         status = "Available" if self.available else "Borrowed"
-        return f"ID : {self.id} '{self.title} by {self.author} - {status}"
+        return f"ID : {self.id} '{self.title}' by {self.author} - {status}"
 
 # user class
 class User :
@@ -90,7 +90,7 @@ class Library :
             print("No books in the library yet.")
             return 
         for book in self.books :
-            print(f"{book}\n")
+            print(f"{book}")
     
     def display_users(self) :
         print("\n 👥 All Users :\n")
@@ -98,7 +98,7 @@ class Library :
             print("No users registered yet.")
             return
         for user in self.users :
-            print(f"{user}\n")
+            print(f"{user}")
             
     def search_book_by_title(self, title) :
         for book in self.books :
